@@ -1,0 +1,15 @@
+app:
+  name: akeenan-poi-gateway-app
+  namespace: akeenan
+  cluster: .apps.j0i9yf30.eastus2.aroapp.io
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-atl/akeenan-gateway
+  org: rhdh-atl
+  name: akeenan-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: akeenan/poi-gateway-app
+  tag: latest
